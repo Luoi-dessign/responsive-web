@@ -1,0 +1,59 @@
+/* PC */
+@media (min-width: 992px) {
+}
+
+/* Tablet & mobile */
+@media (max-width: 991.98px) {
+  /* an navbar */
+  .navbar {
+    display: none;
+  }
+  /* dua logo vao center */
+  .header-top {
+    position: relative;
+  }
+  .header__logo {
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%;
+  }
+  /* can vi tri cua icon menu */
+  .menu-header__icon {
+    position: absolute;
+    top: 38px;
+    left: 26px;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+  }
+  /* overlay */
+  .menu-overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    inset: 0;
+    z-index: 1;
+    /* binh thuong an overlay */
+    opacity: 0;
+    visibility: hidden;
+  }
+  /* ktra menu checkbox hien overlay */
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+/* mobile */
+@media (max-width: 767.98px) {
+}
+
+/* tam an phan ko lien quan */
+.hero,
+.footer,
+main {
+  display: none;
+}

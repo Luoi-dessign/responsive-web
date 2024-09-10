@@ -143,17 +143,139 @@
     width: 90%;
     text-align: center;
   }
+  /* team list block */
+  .team__list {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+  .team-item__thumb {
+    margin: 0 auto;
+  }
+  /* install */
+  .install__img {
+    display: none;
+  }
+  .install__content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  /* blog */
+  .blog__inner {
+    flex-direction: column;
+    row-gap: 30px;
+    column-gap: 30px;
+  }
+  .blog__content {
+    order: 2;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog__list {
+    order: 1;
+  }
+  .blog__heading {
+    max-width: 90%;
+  }
 }
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  /* footer */
+  .footer-hidden-tablet {
+    display: none;
+  }
+  .footer__top {
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+  }
+  .show-on-moblie {
+    display: none;
+  }
 }
 /* mobile */
 @media (max-width: 767.98px) {
-}
-
-/* tam an phan ko lien quan */
-
-.footer {
-  display: none;
+  .header__action {
+    display: none;
+  }
+  .menu-header__icon {
+    top: 16px;
+  }
+  .menu-drawer {
+    padding: 30px;
+    inset: 0 40% 0 0;
+  }
+  .navbar__item {
+    list-style-type: none;
+  }
+  /* them dau ngan */
+  .separate {
+    border-top: 1.5px solid #8c8b8b;
+    margin-top: 10px;
+  }
+  .hero__img-small {
+    display: none;
+  }
+  .hero__img-large {
+    width: 100%;
+    height: auto;
+  }
+  .hero__heading {
+    font-size: 3.5rem;
+  }
+  .hero__row {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .service {
+    padding: 80px 0;
+  }
+  .service__desc {
+    width: 368px;
+  }
+  .service__img {
+    height: auto;
+  }
+  .work__desc {
+    width: 408px;
+  }
+  .about {
+    padding: 85px 0 80px;
+  }
+  /* team list */
+  .team__list {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+  /* install */
+  .section-heading {
+    font-size: 3rem;
+  }
+  .install__desc {
+    font-size: 1.3rem;
+  }
+  .install__inner {
+    margin: 40px 0;
+    padding: 0 8px;
+  }
+  .install__content {
+    min-width: 250px;
+  }
+  /* block blog */
+  .blog__list {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  /* appointment */
+  .appointment__inner {
+    padding: 30px 10px;
+  }
+  .footer__top {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .footer__copyright {
+    margin-top: 20px;
+  }
 }
